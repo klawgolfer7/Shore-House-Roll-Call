@@ -78,8 +78,13 @@ h2 {
 }
 
 /* The switch - the box around the slider */
-.images {
+.thumbnails {
   width: 80px;
+}
+
+.thumbnail {
+  width: 150px;
+/*  height: 150px;*/
 }
 
 .switch {
