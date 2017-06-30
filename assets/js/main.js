@@ -1,4 +1,4 @@
-window.onload = function dateAndTime() {
+window.onload = function () {
 
 document.getElementById("demo").innerHTML = Date();
 };
