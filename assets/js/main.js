@@ -12,11 +12,10 @@ var config = {
 firebase.initializeApp(config);
 
 
-window.onload = function () {
-
+// want to use this to get the following weekend from the date that we are currently on.  Having issues
 var d = new Date();
 
 document.getElementById("demo").innerHTML = Date();
-};
+
 
 
