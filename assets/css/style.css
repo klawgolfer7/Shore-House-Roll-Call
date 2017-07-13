@@ -82,8 +82,9 @@ h2 {
 }
 
 .thumbnail {
+  float: left;
   width: 150px;
-/*  height: 150px;*/
+  height: auto;
 }
 
 .switch {
