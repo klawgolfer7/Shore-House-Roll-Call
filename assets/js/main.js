@@ -11,6 +11,10 @@ var config = {
 };
 firebase.initializeApp(config);
 
+var database = firebase.database();
+
+
+
 
 // want to use this to get the following weekend from the date that we are currently on.  Having issues
 var d = new Date();
