@@ -2,12 +2,12 @@ console.log("lets get this working!")
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyA9f9-swbQH2prnoGjWPhhfuhOnVAB5JyE",
-  authDomain: "shore-house-roll-call-db-9ffed.firebaseapp.com",
-  databaseURL: "https://shore-house-roll-call-db-9ffed.firebaseio.com",
-  projectId: "shore-house-roll-call-db-9ffed",
-  storageBucket: "",
-  messagingSenderId: "359042069125"
+    apiKey: "AIzaSyA9f9-swbQH2prnoGjWPhhfuhOnVAB5JyE",
+    authDomain: "shore-house-roll-call-db-9ffed.firebaseapp.com",
+    databaseURL: "https://shore-house-roll-call-db-9ffed.firebaseio.com",
+    projectId: "shore-house-roll-call-db-9ffed",
+    storageBucket: "",
+    messagingSenderId: "359042069125"
 };
 firebase.initializeApp(config);
 
@@ -16,49 +16,50 @@ var database = firebase.database();
 
 $(document).ready(function() {
 
-	// Image Carousel click functions
 
-		$('.entry').on('click', function(e) {
+    // Image Carousel click functions
 
-// THis should be working to make the image pop into the carousel
-		var target = $(e.target)
-		var src = target.attr('src')
+    $('.entry').on('click', function(e) {
 
-		$('.lightbox img').attr('src', src);
+        // THis should be working to make the image pop into the carousel
+        var target = $(e.target)
+        var src = target.attr('src')
 
-		$('body').addClass('lightbox-active');
-		$('.lightbox img').addClass('resize2');
+        $('.lightbox img').attr('src', src);
 
-	});
-		$('.close').on('click', function() {
-			$('body').removeClass('lightbox-active');
-			$('.lightbox img').removeClass('resize2');
-		});
+        $('body').addClass('lightbox-active');
+        $('.lightbox img').addClass('resize2');
 
-	// change the speed of clicking on the nav bar to get to the section
-	$('.nav-wrapper').onePageNav({
-				scrollSpeed: 1000
+    });
+    $('.close').on('click', function() {
+        $('body').removeClass('lightbox-active');
+        $('.lightbox img').removeClass('resize2');
+    });
 
-			});
+    // change the speed of clicking on the nav bar to get to the section
+    $('.nav-wrapper').onePageNav({
+        scrollSpeed: 1000
 
-			var menu = $(".nav-wrapper nav");
+    });
 
-			$("#menu-icon").click(function () {
+    var menu = $(".nav-wrapper nav");
 
-				$(menu).slideToggle();
+    $("#menu-icon").click(function() {
 
-			});
+        $(menu).slideToggle();
 
-			// fix bug where menu is still hidden when I make the page bigger
-			$(window).resize(function () {
-				var w = $(window).width();
+    });
 
-				// width is greater than 768 and nav is hidden
-				if (w > 768 && $(menu).is(":hidden")) {
-					$(menu).removeAttr("style");
-				}
+    // fix bug where menu is still hidden when I make the page bigger
+    $(window).resize(function() {
+        var w = $(window).width();
 
-			});
+        // width is greater than 768 and nav is hidden
+        if (w > 768 && $(menu).is(":hidden")) {
+            $(menu).removeAttr("style");
+        }
+
+    });
 
 
 
@@ -73,6 +74,3 @@ $(document).ready(function() {
 var d = new Date();
 
 document.getElementById("demo").innerHTML = Date();
-
-
-
