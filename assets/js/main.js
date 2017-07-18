@@ -9,9 +9,14 @@ var config = {
     storageBucket: "",
     messagingSenderId: "359042069125"
 };
+
+// Error is occuring here.  Saying that the firebase variable 
+// isn't created yet.  looking back on past code and firebase website to see what is wrong with it. 
 firebase.initializeApp(config);
 
 var database = firebase.database();
+
+
 
 
 $(document).ready(function() {
