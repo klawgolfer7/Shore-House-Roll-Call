@@ -16,3 +16,4 @@ VALUES ("Kevin", TRUE);
 INSERT INTO people (name, is_coming)
 VALUES ("Kelly", TRUE);
 
+https://www.youtube.com/watch?v=hGZX_SA7lYg
